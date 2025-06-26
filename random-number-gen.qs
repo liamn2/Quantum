@@ -21,7 +21,9 @@ operation GenerateRandomNumberInRange(max : Int) : Int {
 /// Generates a random bit.
 operation GenerateRandomBit() : Result {
     use q = Qubit();   // Allocate a qubit.
-    H(q);              //Set the qubit into superposition of 0 and 1 (Hadamard function).
+    H(q);              //Set the qubit into superposition of 0 and 1 (Hadamard gate).
+                       // Hadamard gate takes a qubit and sets its value s.t. it has an equl probability
+                       // of returning either 0 or 1 in the Bloch sphere. 
     let result = M(q); //Measure qubit and store as result below. 
     Reset(q);          //Reset to zero-state.
     return result;     // Return the result of the measurement.

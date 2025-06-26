@@ -11,6 +11,7 @@ operation Main() : Int {
 operation GenerateRandomNumberInRange(max : Int) : Int {
     mutable bits = [];                 //Determine number of bits needed to represent `max`.
     let nBits = BitSizeI(max);         // Store result as 'nBits'.
+                                       // BiSizeI() returns the number of bits required to represent an integer. 
     for idxBit in 1..nBits {           //Generate `nBits` random bits
         bits += [GenerateRandomBit()];    
     }

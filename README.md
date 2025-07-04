@@ -1,5 +1,6 @@
 # Quantum
 Repository for Quantum programming, starting with Q# and Quantum Azure.  
+![Screenshot 2025-07-04 033457](https://github.com/user-attachments/assets/5514b4e0-1656-45a0-a323-2facd1df6ef6)
 
 
 
